@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Music Player</title>
+        <link rel="icon" type="image/png" href="/pic/musical-note.png">
+        <link rel="stylesheet" href="styles.css">
+        
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    </head>
+<body>
+    <div class="background-image"></div>
+    <div class="nav-bar">
+        <h1><img src="/pic/musical-note.png" width="80px" height="60px"></h1>
+        <button id="showPlayerBtn" class="nav-bar-button">Play Music</button>
+    </div>
+    <div class="music-player-container hidden">
+        <div class="music-player">
+            <div class="player-header">
+                <h1 class="logo-text">Rockstar Music Player</h1>
+            </div>
+            <div class="player-controls">
+                <button id="prevBtn" class="control-btn">⏮</button>
+                <button id="playPauseBtn" class="control-btn">▶️</button>
+                <button id="nextBtn" class="control-btn">⏭</button>
+            </div>
+            <div class="player-info">
+                <div class="track-info">
+                    <span id="trackName">Press ▶️ to Play Music <i class="fas fa-music"></i></span>
+                    <span id="trackArtist"></span>
+                </div>
+                <div class="progress-bar-container">
+                    <input id="progressBar" class="progress-bar" type="range" min="0" max="100" value="0">
+                </div>
+            </div>
+        </div>
+    </div>
+    <audio id="audioPlayer" src="/pic/omahi.mp3"></audio>
+    <audio id="audioPlayer2" src="/pic/man.mp3"></audio>
+    <audio id="audioPlayer3" src="/pic/Mahi.mp3"></audio>
+    <script src="script.js"></script>
+</body>
+</html>
